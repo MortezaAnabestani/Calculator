@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form name="form" id="myFrom">
+            <div class="display">
+                <input type="text" placeholder="0" name="displayResult" id="displayResult"/>
+            </div>
+            <input type="button" value="C" class="red" onclick="reset()">
+            <h2>JavaSctipt Calculator</h2>
+            <div class="row">
+                <input type="button" name="b7" value="7" onclick="addToCalculater(b7.value)">
+                <input type="button" name="b8" value="8"onclick="addToCalculater(b8.value)">
+                <input type="button" name="b9" value="9"onclick="addToCalculater(b9.value)">
+                <input type="button" name="add" value="+"onclick="addToCalculater(add.value)">
+                <input type="button" name="abs" value="|x|"onclick="mathCalculater('abs')">
+                <input type="button" name="ceil" value="ce"onclick="mathCalculater('ceil')">
+            </div>
+            <div class="row">
+                <input type="button" name="b4" value="4"onclick="addToCalculater(b4.value)">
+                <input type="button" name="b5" value="5"onclick="addToCalculater(b5.value)">
+                <input type="button" name="b6" value="6"onclick="addToCalculater(b6.value)">
+                <input type="button" name="subb" value="-"onclick="addToCalculater(subb.value)">
+                <input type="button" name="sqrt" value="&radic;"onclick="mathCalculater('sqrt')">
+                <input type="button" name="floor" value="fl"onclick="mathCalculater('floor')">
+            </div>
+            <div class="row">
+                <input type="button" name="b1" value="1"onclick="addToCalculater(b1.value)">
+                <input type="button" name="b2" value="2"onclick="addToCalculater(b2.value)">
+                <input type="button" name="b3" value="3"onclick="addToCalculater(b3.value)">
+                <input type="button" name="mulb" value="*"onclick="addToCalculater(mulb.value)">
+                <input type="button" name="round" value="r"onclick="mathCalculater('round')">
+                <input type="button" name="power" value="^"onclick="mathCalculater('pow')">
+            </div>
+            <div class="row">
+                <input type="button" name="b0" value="0"onclick="addToCalculater(b0.value)">
+                <input type="button" name="potb" value="."onclick="addToCalculater(potb.value)">
+                <input type="button" name="divb" value="/"onclick="addToCalculater(divb.value)">
+                <input type="button" name="addb" class="green" value="=" onclick="finilize()">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
